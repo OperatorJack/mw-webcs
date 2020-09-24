@@ -42,7 +42,7 @@ export function Body() {
           locale={locale}
           theme="light_mitsuketa_tribute"
           width="100%"
-          height="500px"
+          height="550px"
         />
       </>
     );
