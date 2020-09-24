@@ -7,7 +7,7 @@ export const MorrowindSubRecordDefinitions = {
     HEDR: [
       new MorrowindSubRecordProperty(
         MorrowindDataType.Number.Size,
-        MorrowindSubRecordPropertyDataTypes.Number,
+        MorrowindSubRecordPropertyDataTypes.Float,
         "Version",
         "Float. Version. 1.2."
       ),
@@ -56,6 +56,40 @@ export const MorrowindSubRecordDefinitions = {
         MorrowindSubRecordPropertyDataTypes.Number,
         "Master Size Split",
         "Long. Master Size, split due to JSON."
+      ),
+    ],
+  },
+  GMST: {
+    NAME: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Setting ID",
+        "Variable length string. GMST Setting ID."
+      ),
+    ],
+    STRV: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "String Value",
+        "Variable length string. GMST Setting String Value."
+      ),
+    ],
+    INTV: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Integer Value",
+        "Variable length string. GMST Setting Integer Value."
+      ),
+    ],
+    FLTV: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Float,
+        "String Value",
+        "Variable length string. GMST Setting String Value."
       ),
     ],
   },

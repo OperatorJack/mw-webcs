@@ -23,6 +23,10 @@ export class MorrowindDataView {
     return this.dataview.getString(offset, length);
   };
 
+  getFloat = (offset: number) => {
+    return this.dataview.getFloat32(offset);
+  };
+
   getNumber = (offset: number) => {
     return this.dataview.getUint32(offset);
   };

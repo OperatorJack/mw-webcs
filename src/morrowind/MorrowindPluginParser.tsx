@@ -13,6 +13,7 @@ export class MorrowindPluginParser {
   }
 
   private integerSize: number = 4;
+  private floatSize: number = 4;
   private bigIntegerSize: number = 8;
 
   private parseSubRecordProperties(
@@ -54,6 +55,12 @@ export class MorrowindPluginParser {
           Value: this.dataview.getBigInt(position),
         };
         position += this.bigIntegerSize;
+      } else if (defintion.Type === MorrowindSubRecordPropertyDataTypes.Float) {
+        property = {
+          Name: text,
+          Value: this.dataview.getFloat(position),
+        };
+        position += this.floatSize;
       } else if (
         defintion.Type === MorrowindSubRecordPropertyDataTypes.String
       ) {

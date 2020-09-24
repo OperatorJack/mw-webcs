@@ -32,6 +32,10 @@ export class SimpleDataView {
     return text;
   };
 
+  getFloat32 = (offset: number, littleEndian: boolean = true) => {
+    return this.dataview.getFloat32(offset, littleEndian);
+  };
+
   getUint32 = (offset: number, littleEndian: boolean = true) => {
     return this.dataview.getUint32(offset, littleEndian);
   };
