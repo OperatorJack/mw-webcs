@@ -1,40 +1,60 @@
-function getProperty(
-  bytes: number | null,
-  type: string,
-  text: string,
-  description: string
-) {
-  return {
-    bytes: bytes,
-    type: type,
-    text: text,
-    description: description,
-  };
-}
+import { MorrowindDataType } from "./structures/MorrowindDataType";
+import MorrowindSubRecordProperty from "./structures/MorrowindSubRecordProperty";
+import { MorrowindSubRecordPropertyDataTypes } from "./structures/MorrowindSubRecordPropertyDataTypes";
 
 export const MorrowindSubRecordDefinitions = {
   TES3: {
     HEDR: [
-      getProperty(4, "n", "Version", "Float. Version. 1.2."),
-      getProperty(4, "n", "Unknown", "Long. Unknown."),
-      getProperty(32, "s", "Company Name", "String. Company Name."),
-      getProperty(256, "s", "ESM Description", "String. ESM File Description."),
-      getProperty(4, "n", "Records", "Long. Number of records."),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Version",
+        "Float. Version. 1.2."
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Unknown",
+        "Long. Unknown."
+      ),
+      new MorrowindSubRecordProperty(
+        32,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Author",
+        "String. Author."
+      ),
+      new MorrowindSubRecordProperty(
+        256,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Plugin Description",
+        "String. Plugin Description."
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Records",
+        "Long. Number of records."
+      ),
     ],
     MAST: [
-      getProperty(
+      new MorrowindSubRecordProperty(
         null,
-        "s",
+        MorrowindSubRecordPropertyDataTypes.String,
         "Master File",
         "Variable length string. Master File."
       ),
     ],
     DATA: [
-      getProperty(4, "n", "Master Size", "Long. Master Size."),
-      getProperty(
-        4,
-        "n",
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
         "Master Size",
+        "Long. Master Size."
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Master Size Split",
         "Long. Master Size, split due to JSON."
       ),
     ],

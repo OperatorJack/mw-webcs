@@ -2,6 +2,8 @@ import { MorrowindDataView } from "./MorrowindDataView";
 import MorrowindRecord from "./structures/MorrowindRecord";
 import MorrowindSubRecord from "./structures/MorrowindSubRecord";
 import { MorrowindSubRecordDefinitions } from "./MorrowindSubRecordDefinitions";
+import MorrowindSubRecordProperty from "./structures/MorrowindSubRecordProperty";
+import { MorrowindSubRecordPropertyDataTypes } from "./structures/MorrowindSubRecordPropertyDataTypes";
 
 export class MorrowindPluginParser {
   dataview: MorrowindDataView;
@@ -33,29 +35,33 @@ export class MorrowindPluginParser {
       return "Not Implemented";
     }
 
-    definitions.forEach((defintion: any) => {
-      let bytes: number = defintion.bytes;
-      let text: string = defintion.text;
+    definitions.forEach((defintion: MorrowindSubRecordProperty) => {
+      let bytes: number | null = defintion.Bytes;
+      let text: string = defintion.Text;
 
       var property;
-      if (defintion.type == "n") {
+      if (defintion.Type === MorrowindSubRecordPropertyDataTypes.Number) {
         property = {
           Name: text,
           Value: this.dataview.getNumber(position),
         };
         position += this.integerSize;
-      } else if (defintion.type == "n64") {
+      } else if (
+        defintion.Type === MorrowindSubRecordPropertyDataTypes.BigInt
+      ) {
         property = {
           Name: text,
           Value: this.dataview.getBigInt(position),
         };
         position += this.bigIntegerSize;
-      } else if (defintion.type == "s") {
+      } else if (
+        defintion.Type === MorrowindSubRecordPropertyDataTypes.String
+      ) {
         property = {
           Name: text,
           Value: this.dataview.getString(position, bytes ?? offset),
         };
-        position += bytes;
+        position += bytes ?? offset;
       } else {
         property = {};
       }
