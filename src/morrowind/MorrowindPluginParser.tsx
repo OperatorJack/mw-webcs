@@ -23,7 +23,6 @@ export class MorrowindPluginParser {
 
     let defintionGroup: any = (MorrowindSubRecordDefinitions as any)[groupName];
     if (defintionGroup == null) {
-      console.log(groupName + " not found.");
       return "Not Implemented";
     }
     let definitions: any = (MorrowindSubRecordDefinitions as any)[groupName][
