@@ -85,7 +85,8 @@ export class MorrowindPluginParser {
     offset: number
   ): MorrowindSubRecord[] {
     let SubRecords: MorrowindSubRecord[] = [];
-    while (position <= offset) {
+    let finalPosition: number = position + offset;
+    while (position < finalPosition) {
       let name: string = this.dataview.getString(position, 4);
       position += 4;
       let size: number = this.dataview.getNumber(position);
