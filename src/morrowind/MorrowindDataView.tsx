@@ -28,7 +28,7 @@ export class MorrowindDataView {
   };
 
   getNumber = (offset: number) => {
-    return this.dataview.getUint32(offset);
+    return this.dataview.getInt32(offset);
   };
 
   getBigInt = (offset: number) => {

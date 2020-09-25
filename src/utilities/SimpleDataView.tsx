@@ -40,6 +40,10 @@ export class SimpleDataView {
     return this.dataview.getUint32(offset, littleEndian);
   };
 
+  getInt32 = (offset: number, littleEndian: boolean = true) => {
+    return this.dataview.getInt32(offset, littleEndian);
+  };
+
   getUint64 = (offset: number, littleEndian: boolean = true) => {
     return this.dataview.getBigUint64(offset, littleEndian);
   };

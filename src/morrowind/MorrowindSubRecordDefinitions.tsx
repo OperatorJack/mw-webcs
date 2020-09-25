@@ -239,4 +239,408 @@ export const MorrowindSubRecordDefinitions = {
       ),
     ],
   },
+  FACT: {
+    NAME: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Faction ID",
+        "Variable length string. Faction ID."
+      ),
+    ],
+    FNAM: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Faction Name",
+        "Variable length string. The name of the Faction."
+      ),
+    ],
+    RNAM: [
+      new MorrowindSubRecordProperty(
+        32,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Rank Name",
+        "String. The name of the rank."
+      ),
+    ],
+    FADT: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Attribute ID 1",
+        "Long. Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Attribute ID 2",
+        "Long. Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 1 - Attribute ID 1",
+        "Long. Rank 1 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 1 - Attribute ID 2",
+        "Long. Rank 1 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 1 - Skill 1",
+        "Long. Rank 1 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 1 - Skill 2",
+        "Long. Rank 1 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 1 - Faction",
+        "Long. Rank 1 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 2 - Attribute ID 1",
+        "Long. Rank 2 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 2 - Attribute ID 2",
+        "Long. Rank 2 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 2 - Skill 1",
+        "Long. Rank 2 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 2 - Skill 2",
+        "Long. Rank 2 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 2 - Faction",
+        "Long. Rank 2 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 3 - Attribute ID 1",
+        "Long. Rank 3 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 3 - Attribute ID 2",
+        "Long. Rank 3 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 3 - Skill 1",
+        "Long. Rank 3 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 3 - Skill 2",
+        "Long. Rank 3 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 3 - Faction",
+        "Long. Rank 3 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 4 - Attribute ID 1",
+        "Long. Rank 4 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 4 - Attribute ID 2",
+        "Long. Rank 4 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 4 - Skill 1",
+        "Long. Rank 4 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 4 - Skill 2",
+        "Long. Rank 4 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 4 - Faction",
+        "Long. Rank 4 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 5 - Attribute ID 1",
+        "Long. Rank 5 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 5 - Attribute ID 2",
+        "Long. Rank 5 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 5 - Skill 1",
+        "Long. Rank 5 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 5 - Skill 2",
+        "Long. Rank 5 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 5 - Faction",
+        "Long. Rank 5 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 6 - Attribute ID 1",
+        "Long. Rank 6 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 6 - Attribute ID 2",
+        "Long. Rank 6 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 6 - Skill 1",
+        "Long. Rank 6 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 6 - Skill 2",
+        "Long. Rank 6 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 6 - Faction",
+        "Long. Rank 6 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 7 - Attribute ID 1",
+        "Long. Rank 7 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 7 - Attribute ID 2",
+        "Long. Rank 7 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 7 - Skill 1",
+        "Long. Rank 7 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 7 - Skill 2",
+        "Long. Rank 7 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 7 - Faction",
+        "Long. Rank 7 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 8 - Attribute ID 1",
+        "Long. Rank 8 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 8 - Attribute ID 2",
+        "Long. Rank 8 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 8 - Skill 1",
+        "Long. Rank 8 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 8 - Skill 2",
+        "Long. Rank 8 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 8 - Faction",
+        "Long. Rank 8 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 9 - Attribute ID 1",
+        "Long. Rank 9 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 9 - Attribute ID 2",
+        "Long. Rank 9 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 9 - Skill 1",
+        "Long. Rank 9 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 9 - Skill 2",
+        "Long. Rank 9 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 9 - Faction",
+        "Long. Rank 9 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 10 - Attribute ID 1",
+        "Long. Rank 10 - Attribute ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 10 - Attribute ID 2",
+        "Long. Rank 10 - Attribute ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 10 - Skill 1",
+        "Long. Rank 10 - Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 10 - Skill 2",
+        "Long. Rank 10 - Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Rank 10 - Faction",
+        "Long. Rank 10 - Faction"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 1",
+        "Long. Skill ID 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 2",
+        "Long. Skill ID 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 3",
+        "Long. Skill ID 3"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 4",
+        "Long. Skill ID 4"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 5",
+        "Long. Skill ID 5"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Skill ID 6",
+        "Long. Skill ID 6"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Unkown",
+        "Long. Unknown"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Hidden From Player Flag",
+        "Long. Hidden From Player Flag. 1 = Hidden;"
+      ),
+    ],
+    ANAM: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Faction Reaction Name",
+        "Variable length string. The name of the Faction Reaction Value pair."
+      ),
+    ],
+    INTV: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Faction Reaction Value",
+        "Long. Faction Reaction Value. The ANAM/INTV occur in pairs for each faction with a reaction adjustment (usually -4 to +4)"
+      ),
+    ],
+  },
 } as const;
