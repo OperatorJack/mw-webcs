@@ -119,4 +119,124 @@ export const MorrowindSubRecordDefinitions = {
       ),
     ],
   },
+  CLAS: {
+    NAME: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Class ID",
+        "Variable length string. Class ID."
+      ),
+    ],
+    FNAM: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Class Name",
+        "Variable length string. The name of the class."
+      ),
+    ],
+    CLDT: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Attribute ID 1",
+        "Long. Attribute Data 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Attribute ID 2",
+        "Long. Attribute Data 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Specialization",
+        "Long. 0 = Combat; 1 = Magic; 2 = Stealth;"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Minor Skill 1",
+        "Long. Minor Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Major Skill 1",
+        "Long. Major Skill 1"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Minor Skill 2",
+        "Long. Minor Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Major Skill 2",
+        "Long. Major Skill 2"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Minor Skill 3",
+        "Long. Minor Skill 3"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Major Skill 3",
+        "Long. Major Skill 3"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Minor Skill 4",
+        "Long. Minor Skill 4"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Major Skill 4",
+        "Long. Major Skill 4"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Minor Skill 5",
+        "Long. Minor Skill 5"
+      ),
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Major Skill 5",
+        "Long. Major Skill 5"
+      ),
+      // TODO: Replace with per-bit properties.
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "Flags",
+        "Long. Flags"
+      ),
+      // TODO: Replace with per-bit properties.
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Number,
+        "AutoCalc Flags",
+        "Long. AutoCalc Flags"
+      ),
+    ],
+    DESC: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Class Description",
+        "Variable length string. The description of the class."
+      ),
+    ],
+  },
 } as const;
