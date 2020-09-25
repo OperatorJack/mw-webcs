@@ -93,4 +93,30 @@ export const MorrowindSubRecordDefinitions = {
       ),
     ],
   },
+  GLOB: {
+    NAME: [
+      new MorrowindSubRecordProperty(
+        null,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Global ID",
+        "Variable length string. Global ID."
+      ),
+    ],
+    FNAM: [
+      new MorrowindSubRecordProperty(
+        1,
+        MorrowindSubRecordPropertyDataTypes.String,
+        "Type of Global",
+        "1 byte String. Type of global. 's' = short; 'l' = long; 'f' = float;"
+      ),
+    ],
+    FLTV: [
+      new MorrowindSubRecordProperty(
+        MorrowindDataType.Number.Size,
+        MorrowindSubRecordPropertyDataTypes.Float,
+        "Float Data",
+        "Float. Float Data."
+      ),
+    ],
+  },
 } as const;
