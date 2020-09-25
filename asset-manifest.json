@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mw-webcs/static/css/main.47dad311.chunk.css",
-    "main.js": "/mw-webcs/static/js/main.ed1b9406.chunk.js",
-    "main.js.map": "/mw-webcs/static/js/main.ed1b9406.chunk.js.map",
+    "main.js": "/mw-webcs/static/js/main.d9697815.chunk.js",
+    "main.js.map": "/mw-webcs/static/js/main.d9697815.chunk.js.map",
     "runtime-main.js": "/mw-webcs/static/js/runtime-main.97b833fd.js",
     "runtime-main.js.map": "/mw-webcs/static/js/runtime-main.97b833fd.js.map",
     "static/js/2.2c51560d.chunk.js": "/mw-webcs/static/js/2.2c51560d.chunk.js",
     "static/js/2.2c51560d.chunk.js.map": "/mw-webcs/static/js/2.2c51560d.chunk.js.map",
     "index.html": "/mw-webcs/index.html",
-    "precache-manifest.114b597e9de2c88807c2aa1ba71eff8c.js": "/mw-webcs/precache-manifest.114b597e9de2c88807c2aa1ba71eff8c.js",
+    "precache-manifest.47c76f3aef10c96a46bef6224824d3a9.js": "/mw-webcs/precache-manifest.47c76f3aef10c96a46bef6224824d3a9.js",
     "service-worker.js": "/mw-webcs/service-worker.js",
     "static/css/main.47dad311.chunk.css.map": "/mw-webcs/static/css/main.47dad311.chunk.css.map",
     "static/js/2.2c51560d.chunk.js.LICENSE.txt": "/mw-webcs/static/js/2.2c51560d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.97b833fd.js",
     "static/js/2.2c51560d.chunk.js",
     "static/css/main.47dad311.chunk.css",
-    "static/js/main.ed1b9406.chunk.js"
+    "static/js/main.d9697815.chunk.js"
   ]
 }
