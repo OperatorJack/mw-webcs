@@ -1,6 +1,6 @@
 import React from "react";
 import { MorrowindDataView } from "../morrowind/MorrowindDataView";
-import { MorrowindPluginParser } from "../morrowind/MorrowindPluginParser";
+import { MorrowindPluginEncoder } from "../morrowind/MorrowindPluginEncoder";
 import MorrowindRecord from "../morrowind/structures/MorrowindRecord";
 
 import JSONInput from "react-json-editor-ajrm";
@@ -15,8 +15,8 @@ export function Body() {
   const handleBuffer = function (e: any) {
     let buffer: ArrayBuffer = e.target.result;
     let dataview: MorrowindDataView = new MorrowindDataView(buffer);
-    let parser: MorrowindPluginParser = new MorrowindPluginParser(dataview);
-    let records: MorrowindRecord[] = parser.parse();
+    let encoder: MorrowindPluginEncoder = new MorrowindPluginEncoder(dataview);
+    let records: MorrowindRecord[] = encoder.encode();
     setResult(records);
   };
 

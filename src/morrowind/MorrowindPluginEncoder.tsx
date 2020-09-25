@@ -5,7 +5,7 @@ import { MorrowindSubRecordDefinitions } from "./MorrowindSubRecordDefinitions";
 import MorrowindSubRecordProperty from "./structures/MorrowindSubRecordProperty";
 import { MorrowindSubRecordPropertyDataTypes } from "./structures/MorrowindSubRecordPropertyDataTypes";
 
-export class MorrowindPluginParser {
+export class MorrowindPluginEncoder {
   dataview: MorrowindDataView;
 
   constructor(dataview: MorrowindDataView) {
@@ -16,7 +16,7 @@ export class MorrowindPluginParser {
   private floatSize: number = 4;
   private bigIntegerSize: number = 8;
 
-  private parseSubRecordProperties(
+  private encodeSubRecordProperties(
     groupName: string,
     propertyName: string,
     position: number,
@@ -87,7 +87,7 @@ export class MorrowindPluginParser {
     return properties;
   }
 
-  private parseSubRecordData(
+  private encodeSubRecordData(
     groupName: string,
     position: number,
     offset: number
@@ -99,7 +99,7 @@ export class MorrowindPluginParser {
       position += 4;
       let size: number = this.dataview.getNumber(position);
       position += this.integerSize;
-      let data: any = this.parseSubRecordProperties(
+      let data: any = this.encodeSubRecordProperties(
         groupName,
         name,
         position,
@@ -115,7 +115,7 @@ export class MorrowindPluginParser {
     return SubRecords;
   }
 
-  parse(): MorrowindRecord[] {
+  encode(): MorrowindRecord[] {
     var endOfFile = false;
     var position = 0;
     var records = [];
@@ -128,7 +128,7 @@ export class MorrowindPluginParser {
       position += this.integerSize;
       let flags: number = this.dataview.getNumber(position);
       position += this.integerSize;
-      let SubRecords: MorrowindSubRecord[] = this.parseSubRecordData(
+      let SubRecords: MorrowindSubRecord[] = this.encodeSubRecordData(
         name,
         position,
         size
