@@ -41,36 +41,44 @@ export class MorrowindPluginParser {
       let text: string = defintion.Text;
 
       var property;
-      if (defintion.Type === MorrowindSubRecordPropertyDataTypes.Number) {
-        property = {
-          Name: text,
-          Value: this.dataview.getNumber(position),
-        };
-        position += this.integerSize;
-      } else if (
-        defintion.Type === MorrowindSubRecordPropertyDataTypes.BigInt
-      ) {
-        property = {
-          Name: text,
-          Value: this.dataview.getBigInt(position),
-        };
-        position += this.bigIntegerSize;
-      } else if (defintion.Type === MorrowindSubRecordPropertyDataTypes.Float) {
-        property = {
-          Name: text,
-          Value: this.dataview.getFloat(position),
-        };
-        position += this.floatSize;
-      } else if (
-        defintion.Type === MorrowindSubRecordPropertyDataTypes.String
-      ) {
-        property = {
-          Name: text,
-          Value: this.dataview.getString(position, bytes ?? offset),
-        };
-        position += bytes ?? offset;
-      } else {
-        property = {};
+      switch (defintion.Type) {
+        case MorrowindSubRecordPropertyDataTypes.Number:
+          property = {
+            Name: text,
+            Value: this.dataview.getNumber(position),
+          };
+          position += this.integerSize;
+          break;
+
+        case MorrowindSubRecordPropertyDataTypes.BigInt:
+          property = {
+            Name: text,
+            Value: this.dataview.getBigInt(position),
+          };
+          position += this.bigIntegerSize;
+          break;
+
+        case MorrowindSubRecordPropertyDataTypes.Float:
+          property = {
+            Name: text,
+            Value: this.dataview.getFloat(position),
+          };
+          position += this.floatSize;
+          break;
+
+        case MorrowindSubRecordPropertyDataTypes.String:
+          property = {
+            Name: text,
+            Value: this.dataview.getString(position, bytes ?? offset),
+          };
+          position += bytes ?? offset;
+          break;
+
+        default:
+          property = {
+            Name: "UNDEFINED",
+            Value: "UNDEFINED",
+          };
       }
 
       properties.push(property);
